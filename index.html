@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="shortcut icon" href="/Assets/icon.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <h2>To-Do List <img src="/Assets/icon.png" alt=""></h2>
+            <div id="add">
+                <input type="text" id="inputTask" placeholder="enter your task here....">
+                <button id="addTask" onclick="addTasks()">Add</button>
+                <button id="voiceAdd"><i class="ri-mic-2-fill"></i></button>
+            </div>
+            <ul class="task-list">
+                <!-- <li><span>task 1</span><button><i class="ri-delete-bin-2-fill"></i></button</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

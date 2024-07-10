@@ -1,0 +1,1 @@
+In this project I have created a to-do list with speech recognition using HTML, CSS and JavaScript.

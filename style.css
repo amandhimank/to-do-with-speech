@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(130deg, #3DC2EC, #4C3BCF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#container{
+    height: fit-content;
+    width: 50vw;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2vw 5vw;
+}
+
+#container h2{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 1vw;
+}
+
+#add{
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(202, 202, 202, 0.495);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.5vw;
+}
+
+#add input{
+    border-radius: 30px;
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3vw;
+    outline: none;
+}
+
+#add button{
+    padding: 1vw 1.5vw;
+    border-radius: 10px;
+    border: none;
+    /* background-color: #FFBA55; */
+    color: #fff;
+    background-color: #0087FF;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: all ease 0.5s;
+}
+
+#add button:nth-child(2){
+    margin-right: 0.3vw;
+}
+
+#add button:hover{
+    background-color: #faa11c;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.task-list{
+    font-size: 1.2vw;
+    margin-top: 2vw;
+    list-style: none;
+    user-select: none;
+    padding: 1vw 2vw;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.task-list li{
+    position: relative;
+    margin-bottom: 2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list li::before{
+    content: "";
+    position: absolute;
+    height: 2vw;
+    width: 2vw;
+    background: url(./Assets/unchecked.png);
+    background-size: cover;
+    left: -40px;
+    top: -3px
+}
+.task-list li.checked::before{
+    content: "";
+    position: absolute;
+    height: 2vw;
+    width: 2vw;
+    background: url(./Assets/checked.png);
+    background-size: cover;
+    left: -40px;
+    top: -3px;
+}
+
+.task-list li.checked{
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.task-list li button{
+    padding: 0.5vw;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.task-list li button:hover{
+    scale:1.2;
+}
